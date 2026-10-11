@@ -1,0 +1,114 @@
+/* Descricao: Aula 13- Elementos Avançados de Formulário
+//nome_arquivo: main.css
+//nome_exercicio: Aula 13- Elementos Avançados de Formulário
+//nome_aluno: Felipe Gabriel de Oliveira
+//email_aluno:felipe.oliveira139@aluno.cps.sp.gov.br
+//turma: do primeiro semestre Código da Turma: WEBI-ISWO28-A 
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #183153;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 25px auto;
+}
+
+.caixa {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+h2 {
+    color: #183153;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.linha input {
+    width: auto;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    background-color: #1769aa;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #104b7b;
+}
+
+button.secundario {
+    background-color: #666;
+    margin-top: 10px;
+}
+
+a {
+    color: #1769aa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#mensagemPerfil, #mensagemCadastro {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: #183153;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
