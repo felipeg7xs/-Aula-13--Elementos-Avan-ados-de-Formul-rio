@@ -1,0 +1,44 @@
+<!-- Descricao: Aula 13- Elementos Avançados de Formulário
+nome_arquivo: cadastro.html
+nome_exercicio: Aula 13- Elementos Avançados de Formulário
+nome_aluno: Felipe Gabriel de Oliveira
+email_aluno:felipe.oliveira139@aluno.cps.sp.gov.br
+turma: do primeiro semestre Código da Turma: WEBI-ISWO28-A --> 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+            <!-- Estilo Css -->
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+                <!-- Inicio das informações  -->
+        <h1>Criar Conta</h1>
+        <p>Preencha os campos para realizar seu cadastro.</p>
+    </header>
+    <main>
+        <section class="caixa">
+            <h2>Cadastro de Usuário</h2>
+            <form id="formCadastro">
+                <label for="nomeCadastro">Nome completo:</label>
+                <input type="text" id="nomeCadastro" minlength="3" required>
+                <label for="emailCadastro">E-mail:</label>
+                <input type="email" id="emailCadastro" required>
+                <label for="senhaCadastro">Senha:</label>
+                <input type="password" id="senhaCadastro" minlength="6" required>
+                <label for="confirmarSenha">Confirmar senha:</label>
+                <input type="password" id="confirmarSenha" minlength="6" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p id="mensagemCadastro" aria-live="polite"></p>
+            <p><a href="perfil.html">Voltar para o login</a></p>
+        </section>
+    </main>
+    <footer><p>Trabalho de HTML, CSS e JavaScript</p></footer>
+</body>
+</html>

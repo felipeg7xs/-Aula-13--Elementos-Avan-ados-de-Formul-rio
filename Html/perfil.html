@@ -1,0 +1,75 @@
+<!-- Descricao: Aula 13- Elementos Avançados de Formulário
+nome_arquivo: Perful.html
+nome_exercicio: Aula 13- Elementos Avançados de Formulário
+nome_aluno: Felipe Gabriel de Oliveira
+email_aluno:felipe.oliveira139@aluno.cps.sp.gov.br
+turma: do primeiro semestre Código da Turma: WEBI-ISWO28-A --> 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Estilo css da página -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Parte incial dos dados -->
+
+        <h1>Área do Usuário</h1>
+        <p>Entre na sua conta ou preencha seu perfil.</p>
+    </header>
+    <main>
+        <!-- Caixas checkbox - E Informações  -->
+        <section class="caixa">
+            <h2>Login</h2>
+            <form id="formLogin">
+                <label for="emailLogin">E-mail:</label>
+                <input type="email" id="emailLogin" required>
+                <label for="senhaLogin">Senha:</label>
+                <input type="password" id="senhaLogin" minlength="6" required>
+                <label class="linha"><input type="checkbox" id="mostrarSenha"> Mostrar senha</label>
+                <button type="submit">Entrar</button>
+                <p><a href="cadastro.html">Criar uma conta</a></p>
+                <p><a href="#" id="recuperarSenha">Esqueci minha senha</a></p>
+            </form>
+        </section>
+        <section class="caixa">
+            <h2>Formulário de Perfil</h2>
+            <form id="formPerfil">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" minlength="3" required>
+                <label for="emailPerfil">E-mail:</label>
+                <input type="email" id="emailPerfil" required>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" min="1" max="120" required>
+                <p>Período de estudo:</p>
+                <label class="linha"><input type="radio" name="periodo" value="Manhã" required> Manhã</label>
+                <label class="linha"><input type="radio" name="periodo" value="Tarde"> Tarde</label>
+                <label class="linha"><input type="radio" name="periodo" value="Noite"> Noite</label>
+                <p>Áreas de interesse:</p>
+                <label class="linha"><input type="checkbox" name="interesses" value="HTML"> HTML</label>
+                <label class="linha"><input type="checkbox" name="interesses" value="CSS"> CSS</label>
+                <label class="linha"><input type="checkbox" name="interesses" value="JavaScript"> JavaScript</label>
+                <label for="curso">Curso:</label>
+                <select id="curso" required>
+                    <option value="">Selecione</option>
+                    <option>Informática</option>
+                    <option>Administração</option>
+                    <option>Mecânica</option>
+                    <option>Outro</option>
+                </select>
+                <label for="sobre">Fale sobre você:</label>
+                <textarea id="sobre" rows="5" minlength="10" required></textarea>
+                <button type="submit">Salvar perfil</button>
+                <button type="reset" class="secundario">Limpar formulário</button>
+            </form>
+            <p id="mensagemPerfil" aria-live="polite"></p>
+        </section>
+    </main>
+    <footer><p>Trabalho de HTML, CSS e JavaScript</p></footer>
+</body>
+</html>
